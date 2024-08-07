@@ -13,4 +13,4 @@ local_con = duckdb.connect("md:my_db")
 #local_con.sql("CREATE DATABASE clouddb FROM 'my_database.db'")
 
 # consultando alguma tabela ja no motherduck
-local_con.sql("SELECT * FROM clouddb.customers").show(); 
+local_con.sql("SELECT * FROM clouddb.dim_customers").show(); 
